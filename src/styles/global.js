@@ -26,4 +26,35 @@ export default createGlobalStyle`
   button {
     cursor: pointer;
   }
+  .modal-style{       
+          background: #F0F0F5;
+          color: #000000;
+          border-radius:8px ;
+          width: 736px;
+          padding: 0 2rem 2rem;
+          margin: auto;
+          border-radius: 0.5rem;
+          display: flex;
+        }
+
+
+.modal-style-overlay{
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      position: fixed;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.75);
+ 
+}
+.button-close-modal{
+    position: relative;
+    margin-right: 0;
+    padding: 1rem 1rem ;
+    float: right;
+    margin-top: 1rem;
+    margin-right: 0px;
+}
+
+
 `;
