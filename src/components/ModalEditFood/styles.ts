@@ -5,6 +5,7 @@ export const Form = styled(Unform)`
   padding: 48px 40px;
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   h1 {
     font-weight: 600;

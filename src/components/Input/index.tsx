@@ -2,8 +2,7 @@ import {
   useEffect,
   useRef,
   useState,
-  useCallback,
-  ReactNode,
+  useCallback
 } from 'react';
 
 import { useField } from '@unform/core';
@@ -12,14 +11,12 @@ import { IconType } from 'react-icons';
 
 
 interface IPropsInput {
-  name: string 
-  icon?: IconType, 
+  name: string
+  icon?: IconType,
   placeholder: string
 }
-interface IPropsInputRef<T> extends HTMLElement {
-  value: string
-}
-const Input = ({ name, icon: Icon , ...rest }: IPropsInput) => {
+
+const Input = ({ name, icon: Icon, ...rest }: IPropsInput) => {
 
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -34,7 +31,6 @@ const Input = ({ name, icon: Icon , ...rest }: IPropsInput) => {
 
   const handleInputBlur = useCallback(() => {
     setIsFocused(false);
-    
     setIsFilled(!!inputRef.current?.value);
 
   }, []);
